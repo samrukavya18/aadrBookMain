@@ -19,27 +19,27 @@ public person(String firstName, String lastName, String city, String state, int 
 	this.zip = zip;
 }
 
-public toString getFirstName() {
+public String getFirstName() {
     return firstName;
 }
 
 public void setFirstName(String firstName) {
     this.firstName = firstName;
 }
-public toString getLastName() {
+public String getLastName() {
     return lastName;
 }
 
 public void setLastName(String lastName) {
     this.lastName = lastName;
 }
-public toString getCity() {
+public String getCity() {
 	return city;
 }
 public void setCity(String city) {
 	   this.city = city;
 }
-public toString getState() {
+public String getState() {
 	return state;
 }
 public void setState(String state) {
@@ -52,5 +52,9 @@ public void setZip(String zip) {
 	   this.zip = zip;
 }
 
-
+public String toString() {
+    return "person [name=" + this.fullname + ", Lastname=" + this.lastname + ", City="
+            + this.city + ", state=" + this.state + ", zip=" + this.zip
+            + ", phone=" + this.phone + "]";
+}
 }
