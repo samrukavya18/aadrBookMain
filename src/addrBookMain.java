@@ -1,5 +1,7 @@
 package book.src;
 
+import java.util.Scanner;
+
 public class addrBookMain {
 
 	public static void main(String[] args) {
@@ -12,6 +14,16 @@ public class addrBookMain {
 		System.out.println("5. Close Address Book");
 		System.out.println("6. Quit");
 		
+		int i=0;
+		while(i==0)
+		{
+			Scanner wr = new Scanner(System.in);
+			int choice = wr.nextInt();
+			   switch (choice)
+			   {
+			   case 1:
+				     break;
+			   case 2:
 		
 		Scanner sc = new Scanner(System.in);
 
@@ -105,9 +117,16 @@ public class addrBookMain {
 
     }
         while (switcher != false);
-
+        break;
     }
-
+			   case 3:
+				      break;
+			   case 4 :
+				      break;
+			   case 5 :
+				      break;
+			   case 6 :
+				      break;
 	}
 
 }
